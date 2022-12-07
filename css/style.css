@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    font-family: var(--font1);
+    height: 28px;
+    background-color: rgb(99, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    color: white;
+}
+
+.bar-content {
+    transform: translateX(100%);
+    animation: move 20s linear infinite;
+}
+
+@keyframes move {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.navigation {
+    font-family: var(--font1);
+    /* height: 68px; */
+    background-color: rgb(240, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 143px; */
+    padding-right: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 28px;
+}
+
+.nav-right {
+    padding: 15px;
+    padding: 0.5em 0.5em;
+    border-radius: 70px;
+    color: #ffffff;
+    background-color: white;
+    border-color: #23232d;
+}
+
+.nav-right:hover,
+.nav-right:focus {
+    color: rgba(223, 203, 203, 0);
+    background:
+        linear-gradient(90deg, rgb(240, 231, 231) 50%, rgb(240, 231, 231) 0) var(--_p, 100%)/200% no-repeat;
+    transition: .4s;
+    transform: scale(1.14);
+    border-color: #23232d;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left {
+    font-size: 20px;
+    display: flex;
+    padding: 15px;
+    color: rgb(99, 51, 51);
+}
+
+.nav-left h1 {
+    font-family: var(--font4);
+    padding-left: 8px;
+    padding-right: 0px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 47px;
+    font-size: 18px;
+}
+
+.nav-left ul li {
+    border-radius: 10%;
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li:hover,
+.nav-left ul li:focus {
+    color: rgba(223, 203, 203, 0);
+    background:
+        linear-gradient(90deg, rgb(240, 231, 231) 50%, rgb(240, 231, 231) 0) var(--_p, 100%)/200% no-repeat;
+    transition: .4s;
+    transform: scale(1.14);
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.blank hr {
+    overflow: hidden;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    color: rgb(99, 51, 51);
+    top: 96px;
+}
+
+.blank {
+    height: 96px;
+}
+
+.content-left {
+    font-family: var(--font3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.content1-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.content1-right {
+    font-family: var(--font3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.content-right img {
+    height: 255px;
+    border: 5px solid black;
+    border-radius: 200px;
+}
+
+.content1-left img {
+    height: 255px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+.content1 {
+    display: flex;
+    /* height: 395px; */
+    background-color: white;
+    margin-top: 32px;
+}
+
+.content {
+    display: flex;
+    height: 340px;
+    background-color: white;
+    margin-top: 96px;
+    justify-content: center;
+}
+
+.footer {
+    height: 50px;
+    background-color: rgb(99, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(99, 51, 51);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(74, 32, 32);
+}
+
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.resume img {
+    height: 1080px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
